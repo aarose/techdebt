@@ -49,6 +49,8 @@ Technical Debt == you owe code ("proper"/fixed code) to yourself, the project, y
 
 # What It Is
 
+## Unintentional VS Intentional
+
 **Unintentional**
 "...a design approach just turns out to be error-prone or a junior programmer just writes bad code."
 
@@ -56,6 +58,20 @@ Technical Debt == you owe code ("proper"/fixed code) to yourself, the project, y
 "...an organization makes a conscious decision to optimize for the present rather than for the future."
 
 [Source](http://www.construx.com/10x_Software_Development/Technical_Debt/)
+
+---
+
+# What It Is
+
+## Large VS Small
+
+**Large**
+"We don't have time to implement this the right way; just hack it in and we'll fix it after we ship."
+
+**Small**
+"Other debt accumulates from taking hundreds or thousands of small shortcuts--generic variable names, sparse comments, creating one class in a case where you should create two, not following coding conventions, and so on. [...] It's easy to incur unintentionally, it adds up faster than you think, and it's harder to track and manage after it has been incurred."
+
+Source: [Steve McConnell](http://www.construx.com/10x_Software_Development/Technical_Debt/)
 
 ---
 
@@ -71,8 +87,15 @@ Well, isn't inherently bad.
 ## But When It Is Bad...
 
 "Like a financial debt, the technical debt incurs interest payments[...] extra effort"
-- Martin Fowler
-[Source](http://martinfowler.com/bliki/TechnicalDebt.html)
+- [Martin Fowler](http://martinfowler.com/bliki/TechnicalDebt.html)
+
+"If the debt grows large enough, eventually the company will spend more on servicing its debt than it invests in increasing the value of its other assets. A common example is a legacy code base in which so much work goes into keeping a production system running (i.e., 'servicing the debt') that there is little time left over to add new capabilities to the system."
+- [Steve McConnell](http://www.construx.com/10x_Software_Development/Technical_Debt/)
+
+---
+
+"...business staff generally seems to have a higher tolerance for technical debt than technical staff does."
+- [Steve McConnell](http://www.construx.com/10x_Software_Development/Technical_Debt/)
 
 ---
 
@@ -84,12 +107,21 @@ Sometimes, it's misleading.
 
 # How to Address the Bad
 
+## Make It Visible
+
+### Deficit List
+"Each time a debt is incurred, the tasks needed to pay off that debt are entered into the [decifit tracking] system along with an estimated effort and schedule." [Steve McConnell](http://www.construx.com/10x_Software_Development/Technical_Debt/)
+
+### Calendar
+"Schedule a date and time to sit down and address technical debt, make them visible calendar events." - Juan Musleh (paraphrased from Pyladies Talk)
+
 ## Minimal Payments
 
-"Keeping your unintended debt down gives you more room to intentionally take on debt."
+"Keeping your unintended debt down gives you more room to intentionally take on debt." [Steve McConnell](http://www.construx.com/10x_Software_Development/Technical_Debt/)
 
 ## Debt ceiling
 
+<img src="http://i.imgur.com/uoBqxtf.png"></img> [Henrik Kniberg](http://blog.crisp.se/2013/10/11/henrikkniberg/good-and-bad-technical-debt)
 ---
 
 # Bonus: Technical Inflation
